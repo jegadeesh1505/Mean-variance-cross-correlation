@@ -48,7 +48,7 @@ clc;
 clear;
 
 function X = f(x)
-    X = 4 * x .* (3 + x).^2;
+    X = 2 * x .* (4 - x).^2;
 end
 
 a = 0;
@@ -57,7 +57,7 @@ b = 1;
 EX = intg(a, b, f);
 
 function Y = c(y)
-    Y = 4 * y .* (3 + y).^2;
+    Y = 2 * y .* (4 - y).^2;
 end
 
 EY = intg(a, b, c);
@@ -65,7 +65,7 @@ EY = intg(a, b, c);
 mprintf("i)   Mean of X = %.2f\n     Mean of Y = %.2f\n", EX, EY);
 
 function X = g(x)
-    X = x.^2 .* 4 .* (3 + x).^2;
+    X = x.^2 .* 2 .* (4 - x).^2;
 end
 
 EX2 = intg(a, b, g);
@@ -96,29 +96,26 @@ plot2d3(1:length(r), r);
 ---
 
 ### Output Graph:
-
-<img width="610" height="460" alt="image" src="https://github.com/user-attachments/assets/b599a1c7-caa2-49ae-9436-0497d2de142c" />
+<img width="753" height="571" alt="image" src="https://github.com/user-attachments/assets/4c13793a-f52d-4c28-baa1-e595eb3921c8" />
 
 ---
-
 ### Output:
 
-<img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/a0641146-41d2-4b7f-9387-629c2d4838c2" />
-
+<img width="539" height="187" alt="Screenshot 2025-11-29 134355" src="https://github.com/user-attachments/assets/ea2f7f79-60ac-4f26-846d-0461428e7b40" />
 
 ---
 
 ### Tabulation:
-
-<img width="553" height="767" alt="image" src="https://github.com/user-attachments/assets/1dda981b-b6ba-4829-a13d-749bed52e96c" />
+![WhatsApp Image 2025-11-29 at 1 16 38 PM](https://github.com/user-attachments/assets/ffaaaf43-8e2e-4377-9414-94bb99bbfc3d)
 
 ---
-
 ### Calculation:
 
-<img width="493" height="825" alt="image" src="https://github.com/user-attachments/assets/9f76953f-1785-4cc9-8921-9cab88da55bb" />
+![WhatsApp Image 2025-11-29 at 1 28 43 PM](https://github.com/user-attachments/assets/bfc1a5dd-8ed1-4bfa-8260-49f7e20a19ae)
 
-<img width="468" height="734" alt="image" src="https://github.com/user-attachments/assets/99dde90c-9e2d-4b3c-bb52-a4b131ab6bd6" />
+![WhatsApp Image 2025-11-29 at 1 29 02 PM](https://github.com/user-attachments/assets/047cf8c1-4032-45ec-b38d-1471b05c689a)
+
+
 
 ---
 
